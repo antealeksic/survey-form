@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1 id="title">Survey Form</h1>
+        <div id="form-outer">
+          <p id="description">
+            Hello there and welcome to the church of Kanye west
+          </p>
+          <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+            <div class="rowTab">
+              <div class="labels">
+                <label id="name-label" for="name">Please enter your name: </label>
+              </div>
+              <div class="rightTab">
+                <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label id="email-label" for="email">Please enter your e-mail: </label>
+              </div>
+              <div class="rightTab">
+                <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your e-mail">
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label id="number-label" for="age">How old are you? </label>
+              </div>
+              <div class="rightTab">
+                <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="currentPos">Select your favourite Kanye album!</label>
+              </div>
+              <div class="rightTab">
+                <select id="dropdown" name="currentPos" class="dropdown">
+              <option disabled value>Select an album!</option>
+              <option value="tcd">The College Dropout</option>
+              <option value="lr">Late Registration</option>
+              <option value="grad">Graduation</option>
+              <option value="808s">808s & Heartbreak</option>
+              <option value="mbdtf">My Beautiful Dark Twisted Fantasy</option>
+              <option value="yeez">Yeezus</option>
+              <option value="tlop">The Life of Pablo</option>
+              <option value="ye">Ye</option>
+            </select>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="userRating">How likely is that you would recommend Kanye West to everyone around you?</label>
+              </div>
+              <div class="rightTab">
+                <ul style="list-style: none;">
+                  <li class="radio"><label>Yes!<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+                  <li class="radio"><label>Si! (yes, but in spanish)<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+                  <li class="radio"><label>Ja! (yes, but in german)<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+                </ul>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="most-like">What do you like most in Kanye West: </label>
+              </div>
+              <div class="rightTab">
+                <select id="most-like" name="mostLike" class="dropdown">
+              <option disabled selected value>Select an option</option>
+              <option value="produces">He is one of the best producers alive</option>
+              <option value="rapper">He's a great rapper</option>
+              <option value="taste">He's got taste</option>
+              <option value="yeezy">He's Yeezy</option>
+            </select>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="preferences">Things that should happen in the future:</label>
+              </div>
+              <div class="rightTab">
+                <ul id="preferences" style="list-style: none;">
+                  <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Yandhi should drop</label></li>
+                  <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Watch the throne 2 should drop</li>
+                  <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Kids see ghosts 2 should drop</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Good ass job should drop</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Kanye and Jay Z should be good again</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Another Rick Ross feature</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">More G.O.O.D. music</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">Wavyness</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Everyone should be happy</label></li>
+                </ul>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="comments">What would you like to add?</label>
+              </div>
+              <div class="rightTab">
+                <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your suggestions here..."></textarea>
+              </div>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+          </form>
+        </div>
+    
+</body>
+</html>

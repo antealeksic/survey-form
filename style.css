@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+html, body {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    min-width: 50vw;
+    background-image: url("http://mediad.publicbroadcasting.net/p/shared/npr/styles/x_large/nprshared/201805/541161484.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #e6dfcc;
+}
+
+#form-outer {
+    background-color: #F58B57;
+    margin: 0 auto;
+    border-radius: 15px;
+    width: 50%;
+    padding: 10px;
+    padding-top: 15px;
+    color: #e6dfcc;
+}
+
+.labels {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 15px;
+}
+
+.rightTab {
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.input-field {
+    height: 30px;
+    width: 280px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+
+#userAge {
+    width: 40px;
+}
+
+.userRatings,
+input[type="checkbox"] {
+    float: left;
+    margin-right: 10px;
+}
+
+#submit {
+    background-color: #a75f3b;
+    border-radius: 4px;
+    color: #e6dfcc;
+    font-size: 1.2em;
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+    border: 1px solid;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    height: 40px;
+    width: 140px;
+    padding: 5px;
+    margin: 10px;  
+    margin-top: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+  }
+
+  .radio, .checkbox {
+    position: relative;
+    left: -43px;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  /* media queries for phones */
+  @media screen and (max-width: 520px) {
+    .labels {
+      width: 100%;
+      text-align: left;
+    }
+    .rightTab {
+      width: 80%;
+      float: left;
+    }
+    .input-field {
+      width: 100%;
+    }
+    select {
+      width: 100%;
+    }
+  }
+
+ 
+ /* media queries for tablets */ 
+  @media screen and (max-width: 768px) {
+    .labels {
+      width: 100%;
+      text-align: left;
+    }
+    .rightTab {
+      width: 80%;
+      float: left;
+    }
+    .input-field {
+      width: 100%;
+    }
+    select {
+      width: 100%;
+    }
+  }
+
+ /* media queries for tablets landscpace */ 
+ @media screen and (max-width: 1024px) {
+    .labels {
+      width: 100%;
+      text-align: left;
+    }
+    .rightTab {
+      width: 80%;
+      float: left;
+    }
+    .input-field {
+      width: 100%;
+    }
+    select {
+      width: 100%;
+    }
+  }
